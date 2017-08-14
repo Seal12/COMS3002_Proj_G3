@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\graphicspath{{./}}
+
+\begin{document}
+
+	\title{COMS3002 - Software Engineering}
+	\author{Aobakwe Mosweu (1049090), Dario Vieira (806414), Seale Rapolai (1098005), Wade Downton (1171712)}
+	\maketitle
+
+	\section{Expanded Description}
+		\begin{flushleft}
+			\begin{enumerate}
+				\textbf{\item Customer}
+				\begin{flushleft}
+					Allow customer to enter/modify data about their ideal home, then use this data entered by the to identify home owners with similar prefereances. Using a DB of these homeowners, produce a neural network for the customers profile to help determine the locations where they're most likely to be happy. The algorithm will produce a list of homes that may best suit the customer, only accessible by the Real Estate Broker/Manager.
+				\end{flushleft}
+				
+				\textbf{\item Real Estate Broker (REBroker)}
+				\begin{flushleft}
+					REBrokers must be able to see the homes that the recommendations algorithm produced and the liklihood of the client being happy in each of those homes. They must be able to alter the importance of specific criterior/preferences (i.e. alter the the importance weighting of each attribute). They must also be able to add/remove houses that are to be sold or are no longer to be sold. And Lastly they must be able to alter viewing times for each house, this includes canceling, adding and/or marking as taken.
+				\end{flushleft}
+				
+				\textbf{\item Real Estate Manager (REManager)}
+				\begin{flushleft}
+					REManagers must be able to add/remove REBrokers/Agents as well as review and manage the company's finances, that is perform accounting/auditing services.
+				\end{flushleft}
+		
+			\end{enumerate}
+		\end{flushleft}
+	
+	\section{Input/Outputs}
+		\begin{flushleft}
+			\textbf{Inputs}
+			\begin{itemize}
+				\item Customers input home preferences.
+				\item Brokers input houses and viewing times.
+				\item Manager inputs new brokers/agents and company finance updates.
+			\end{itemize}
+			
+			\textbf{Outputs}
+			\begin{itemize}
+				\item List of homes that suit the customer and the liklihood of happiness (satisfaction) in those homes.
+				\item Viewing times for each house.
+				\item Finances of the company.
+				\item List of customers looking for homes ad their preferances.
+				\item List of registered brokers/agetns.
+			\end{itemize}
+			
+		\end{flushleft}
+	
+	\section{Group Member Roles}
+		\begin{flushleft}
+		\textbf{Aobakwe Mosweu}
+		\begin{itemize} 
+			\item Frontend
+			\item In charge of front-end development and web-app design.
+			\item In charge of designing the Customer system.
+		\end{itemize}
+		
+		\textbf{Dario Vieira}
+		\begin{itemize}
+			\item Backend
+			\item Incharge of database design.
+			\item In charge of design and creation of neural network used for home recommendations.
+		\end{itemize}
+		
+		\textbf{Seale Rapolai (GL)}
+		\begin{itemize}
+			\item Frontend/backend
+			\item Handles creation of APIs that connect backend and frontend
+			\item In charge of designing the Real Estate Brokers system.
+		\end{itemize}
+		
+		\textbf{Wade Downton}
+		\begin{itemize}
+			\item Frontend/backend
+			\item Handles creation of APIs that connect backend and frontend
+			\item In charge of designing the Real Estate Manager system
+		\end{itemize}
+	
+	\end{flushleft}
+	
+	
+\end{document}

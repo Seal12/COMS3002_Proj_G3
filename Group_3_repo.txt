@@ -1,0 +1,5 @@
+Github Repository: https://github.com/Seal12/COMS3002_Proj_G3.git
+
+To Clone Repository: git clone https://github.com/Seal12/COMS3002_Proj_G3.git
+
+The repository currently has a .pdf file with an expanded description of the project.
