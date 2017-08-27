@@ -1,5 +1,11 @@
+Check if repository has been updated:
+  *run "git remote update"
+  *This will give you a list of the updates to the repository you are unaware of.
+  *run the command below to get these updates.
+
 Get latest/new files from the Repository:
   *Go-to the root folder and run "git pull"
+  *this will download all the latest updates and merge files where neccesary.
 
 To Submit files:
   *run "git status" to see what files you changed and need to be pushed to repository.
