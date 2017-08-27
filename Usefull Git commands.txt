@@ -1,0 +1,9 @@
+Get latest/new files from the Repository:
+  *Go-to the root folder and run "git pull"
+
+To Submit files:
+  *run "git status" to see what files you changed and need to be pushed to repository.
+  *run "git add -A" to stage all changes in your repository.
+  *run "git commit -m 'message describing the changes you made' " to commit your changes.
+  *run "git push origin master" to push all your changes to the repository.
+
