@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Lab_2_Choice_of_Architecture}
+\author{wadedownton}
+\date{August 2017}
+
+\begin{document}
+	
+	\title{COMS3002 - Software Engineering}
+	\author{Wade Downton (1171712)}
+	\maketitle
+	
+	\section{ii) Choice of Architecture}
+	\begin{enumerate}
+		\item \textbf{Types of architectures and their pros and cons:}
+		\newline
+		
+		
+		
+		\textbf{- Blackboard}
+		\newline\newline
+		\textbf{Description:}
+		
+		\begin{flushleft}
+			A blackboard system is an artificial intelligence approach based on the blackboard architectural model.
+			The architecture relies primarily on machine learning and AI to	solve complex, NP-Hard problems.				
+		\end{flushleft}
+		
+		\textbf{Pros:}
+		\begin{itemize}
+			\item Made to handle complex, ill-defined problems with the use of AI
+			\item Is able to easily adapt to new data
+		\end{itemize}
+		
+		\textbf{Cons:}
+		\begin{itemize}
+			\item This architecture does not scale well to real world problems
+			\item Very complex to design and implement
+			\item Requires a large amount of pre existing data to train algorithms
+		\end{itemize}
+		
+		
+		
+		\newline
+		\textbf{- Client-server (3-tier)}
+		\newline\newline
+		\textbf{Description:}
+		
+		\begin{flushleft}
+			A distributed application structure that partitions tasks between the providers of a resource or service. 
+			A three-tier client/server is a type of multi-tier computing architecture in which an entire application 
+			is distributed across three different computing layers or tiers. It divides the presentation, application 
+			logic and data processing layers across client and server devices. The client will request from the application 
+			server and the application server will request from the database server. The client will never communicate 
+			without the use of the database server.				
+		\end{flushleft}
+		
+		\textbf{Pros:}
+		\begin{itemize}
+			\item All files are stored in a central location
+			\item Backups and network security is controlled centrally, as only the application server can access the database server
+			\item Users can access shared data which is centrally controlled
+			\item The workload on the client is lowered with the use of a server				
+		\end{itemize}
+		
+		\textbf{Cons:}
+		\begin{itemize}
+			\item The server are expensive to purchase and maintain
+			\item If any part of the server side network fails then a lot of disruption can occur				
+		\end{itemize}
+		
+		
+		
+		
+		\textbf{- Monolithic application}
+		\newline\newline
+		\textbf{Description:}
+		
+		\begin{flushleft}
+			A monolithic application is built as a single unit. The application is not separated into smaller partitions and services.
+			The single unit involves the program and its own data storage. No centralization exists in this architecture without the use of a server.				
+		\end{flushleft}
+		
+		\textbf{Pros:}
+		\begin{itemize}
+			\item Simple to design and create
+		\end{itemize}
+		
+		\textbf{Cons:}
+		\begin{itemize}
+			\item Designed without modularity, i.e. Cannot add to or alter the application without difficulty
+			\item Does not scale well for larger applications
+			\item Can be difficult to debug, as problems can be difficult to locate on large scale applications
+		\end{itemize}
+		
+		
+		
+		
+		\textbf{- Peer-to-peer (P2P)}
+		\newline\newline
+		\textbf{Description:}
+		
+		\begin{flushleft}
+			An architecture that partitions tasks or workloads between peers or nodes, where no centralized node exists.
+			Data is shared amongst all the nodes and it is easy to remove or insert nodes into the system without 
+			affecting the system.
+			\newline\newline\newline
+			
+		\end{flushleft}
+		\newline\newline
+		\textbf{Pros:}
+		\begin{itemize}
+			\item More reliable as central dependency is eliminated
+			\item The over-all cost of building and maintaining this architecture is comparatively very less than client-server
+		\end{itemize}
+		\newline\newline
+		\textbf{Cons:}
+		\begin{itemize}
+			\item Weaker security over data than that of client-server
+			\item Data recovery or backup is very difficult
+			\item Difficult to update applications over this type of architecture
+		\end{itemize}
+		
+		
+		
+		
+		
+		
+		\newline\newline
+		\textbf{- Rule-based Architecture}
+		\newline\newline
+		\textbf{Description:}
+		
+		\begin{flushleft}
+			The use of forward and backward chaining in order to determine rules that define the architecture of a system.
+			Forward chaining observes the given data and makes decisions based on that. Backward chaining observes the goals
+			and uses that to make decisions.				
+		\end{flushleft}
+		
+		\textbf{Pros:}
+		\begin{itemize}
+			\item Easy to implement by defining separate rules in separate layers.
+			\item Allows for modularity
+			\item All "knowledge" in the architecture is uniform as it can be expressed in the same format defined by the rules
+		\end{itemize}
+		
+		\textbf{Cons:}
+		\begin{itemize}
+			\item Limited amount of rules that can be defined.
+			\item Complexity increases as the system size increases.	\newline\newline			
+		\end{itemize}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		\newline\newline
+		
+		\item \textbf{Choice of architecture and why:} 3-tier Client-server Architecture
+		\begin{flushleft}
+			
+			This architecture provides for an easy, separate development of the back-end and front-end of the application.
+			Data will be centralized on the server that will be used and this will provide for strong layer of user privacy
+			and security. 
+			
+			Modularity is easy as alterations to the application can be rolled out on the server side towards
+			all clients at once. This architecture is best for this scale of application, and a lot of processing will be done
+			server side so less workload will be put on the client. 
+			
+		\end{flushleft}
+	\end{enumerate}
+	
+\end{document}
