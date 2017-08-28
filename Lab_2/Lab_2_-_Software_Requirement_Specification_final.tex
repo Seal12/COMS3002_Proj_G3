@@ -1,0 +1,191 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\graphicspath{{./}}
+
+\begin{document}
+	\title{%
+		COMS3002 - Software Engineering\\
+		\large Lab 2: Software Requirement Specification
+	}
+	\author{Aobakwe Mosweu (1049090), \\Dario Vieira (806414), \\Seale Rapolai (1098005), \\Wade Downton (1171712)}
+	\maketitle
+	
+	\clearpage
+	\tableofcontents
+	\clearpage
+	
+	\section{software development life-cycle (Dario Vieira)}
+		\subsection{The 6 most common SDLC models}
+			\begin{itemize}
+				\item \textbf{The Waterfall model} is a model that does not allow for the revision of a previous phase in the cycle. This model will not be used as a delay in one phase will have a domino effect on all following phases and therefor one member that does not work effectively will hold back the others.
+				\item \textbf{The V shaped model} is an adaptation of waterfall that has testing done at the end of each phase to prevent errors/discrepancies before moving on to the following phase. This model will not be used for the same reason as the waterfall model.
+				\item \textbf{The Iterative model} allows for a quick production of a single version on a certain set of requirements and allows for a simple means to implement changes.
+				\item \textbf{The Spiral model} is an adaptation of the iterative model that will run multiple cycles before the project is complete. Suffers the drawback that it may be drawn into an infinite spiral.
+				\item \textbf{The Big bang model} is a haphazard methodology that no planning is done. This is normally used when the requirements are not completely understood by the client or the developer. This will not be used as it is only usable in small groups of programmers (1 or 2) and on small scale projects.
+				\item \textbf{The Agile model} is a further adaptation onto the Iterative model that still produces a product very quickly but involves the client and user more regularly to ensure it is meeting the expectations. The main drawback to Agile is because of the user centered approach the user may lead the project astray if they are not clear.
+			\end{itemize}
+			\begin{flushleft}
+				We will be using an agile approach as it is the current industry standard and we believe it will allow us to bring the most effective product in the end, especially considering on the wide variety of people that out project will be appealing to.
+			\end{flushleft}
+	
+	
+	\section{Application Architecture (Wade Downton)}
+		\subsection{Types of Architecture}
+			\subsubsection{Blackboard}
+			\begin{flushleft}
+				A blackboard system is an artificial intelligence approach based on the blackboard architectural model. The architecture relies primarily on machine learning and AI to solve complex, NP-Hard problems.
+			\end{flushleft}
+			
+			\textbf{Pros:}
+			\begin{itemize}
+				\item Made to handle complex, ill-defined problems with the use of AI.
+				\item Is able to easily adapt to new data.\\
+			\end{itemize}
+			
+			\textbf{Cons:}
+			\begin{itemize}
+				\item This architecture does not scale well to real world problems.
+				\item Very complex to design and implement.
+				\item Requires a large amount of pre existing data to train algorithms.
+			\end{itemize}
+			
+			\subsubsection{3-tier Client-Server}
+			
+			\begin{flushleft}
+				A distributed application structure that partitions tasks between the providers of a resource or service. A three-tier client/server is a type of multi-tier computing architecture in which an entire application is distributed across three different computing layers or tiers. It divides the presentation, application logic and data processing layers across client and server devices. The client will request from the application server and the application server will request from the database server. The client will never communicate without the use of the database server.				
+			\end{flushleft}
+			
+			\textbf{Pros:}
+			\begin{itemize}
+				\item All files are stored in a central location.
+				\item Backups and network security is controlled centrally, as only the application server can access the database server.
+				\item Users can access shared data which is centrally controlled.
+				\item The workload on the client is lowered with the use of a server.\\		
+			\end{itemize}
+			
+			\textbf{Cons:}
+			\begin{itemize}
+				\item The server are expensive to purchase and maintain.
+				\item If any part of the server side network fails then a lot of disruption can occur				
+			\end{itemize}
+			
+			\subsubsection{Monolithic application}
+			
+			\begin{flushleft}
+				A monolithic application is built as a single unit. The application is not separated into smaller partitions and services. The single unit involves the program and its own data storage. No centralization exists in this architecture without the use of a server.				
+			\end{flushleft}
+		
+			\textbf{Pros:}
+			\begin{itemize}
+				\item Simple to design and create.\\
+			\end{itemize}
+		
+			\textbf{Cons:}
+			\begin{itemize}
+				\item Designed without modularity, i.e. Cannot add to or alter the application without difficulty.
+				\item Does not scale well for larger applications.
+				\item Can be difficult to debug, as problems can be difficult to locate on large scale applications.
+			\end{itemize}
+		
+			\subsubsection{Peer-to-peer}
+			
+			\begin{flushleft}
+				An architecture that partitions tasks or workloads between peers or nodes, where no centralized node exists. Data is shared amongst all the nodes and it is easy to remove or insert nodes into the system without affecting the system.			
+			\end{flushleft}
+		
+			\textbf{Pros:}
+			\begin{itemize}
+				\item More reliable as central dependency is eliminated.
+				\item The over-all cost of building and maintaining this architecture is comparatively very less than client-server.\\
+			\end{itemize}
+		
+			\textbf{Cons:}
+			\begin{itemize}
+				\item Weaker security over data than that of client-server.
+				\item Data recovery or backup is very difficult.
+				\item Difficult to update applications over this type of architecture.
+			\end{itemize}
+			
+			\subsubsection{Rule-based Architecture}
+			
+			\begin{flushleft}
+				The use of forward and backward chaining in order to determine rules that define the architecture of a system. Forward chaining observes the given data and makes decisions based on that. Backward chaining observes the goals and uses that to make decisions.				
+			\end{flushleft}
+		
+			\textbf{Pros:}
+			\begin{itemize}
+				\item Easy to implement by defining separate rules in separate layers.
+				\item Allows for modularity.
+				\item All "knowledge" in the architecture is uniform as it can be expressed in the same format defined by the rules.\\
+			\end{itemize}
+		
+			\textbf{Cons:}
+			\begin{itemize}
+				\item Limited amount of rules that can be defined.
+				\item Complexity increases as the system size increases.			
+			\end{itemize}
+		
+			
+		\subsection{Choice of Architecture: 3-tier Client-server Architecture}
+			\begin{flushleft}
+				This architecture provides for an easy, separate development of the back-end and front-end of the application. Data will be centralized on the server that will be used and this will provide for strong layer of user privacy and security. Modularity is easy as alterations to the application can be rolled out on the server side towards all clients at once. This architecture is best for this scale of application, and a lot of processing will be done server side so less workload will be put on the client.
+			\end{flushleft}
+	
+	
+	\section{Front-end User Interface (Aobakwe Mosweu)}
+		\subsubsection{Front-end User Interface Methods}
+			\begin{enumerate}
+				\item Website: Browser
+				\item Mobile App: Android and other platforms
+				\item Desktop App
+			\end{enumerate}
+			
+		\subsubsection{Choice of User-Interface}
+			\begin{flushleft}
+				I think the best UI to use for our project is a website, because it will be accessible on any device that has a browser and an internet connection. It will compatible with most devices i.e.) It will not be restricted to only a computer or a phone.
+			\end{flushleft}
+
+			\begin{flushleft}
+				Websites are accessible to a widest possible audience, as compared to applications that will still have to be downloaded. The maintainer can instantly add some updates to the website and users don’t have to download the latest version of the website to be able to use it.
+			\end{flushleft}
+			
+			\begin{flushleft}
+				Websites can easily be shared between users by a simple link over social media, whereas with applications it is not that easy to do so.
+			\end{flushleft}
+			
+			\begin{flushleft}
+				Maintenance and support of websites are not that expensive whereas with applications you must do upgrades, testing and take care of compatibility issues, which is much more expensive.
+			\end{flushleft}
+			
+			\begin{flushleft}
+				Websites are much easier for users to find because their pages can be displayed in search results.
+			\end{flushleft}
+	\section{Back-end Service and DBMS (Seale Rapolai)}
+	
+		\subsection{Back-end Service: NodeJS}
+		\begin{flushleft}
+			NodeJS is a platform build using Javascript. It is easy to learn and allows developers to build fast and scalable network applications. It uses an event driven, non-blocking I/O model that makes it lightweight and very efficient. This makes it suited for data-intensive and real-time applications that have have high network traffic. It is open source and cross platform, which makes it very portable and versatile. It also has a vast module library which simplifies the development of applications.
+				
+		\end{flushleft}
+		\textbf{Advantages:}
+		\begin{itemize}
+			\item \textbf{Asynchronous and Event Driven} - NodeJs APIs are asynchronous (non-blocking). This means the server never waits for API to return data before it has to handle other requests.
+			\item \textbf{Fast} - It was build on Google Chrome's V8 JavaScript Engine and as such has fast code execution.
+			\item \textbf{Single Threaded but Highly Scalable} - It is sigle threaded with event looping. This helps the server to respond in a non-blocking way since each request is handled on after the other. This makes server very scalable as compared to other servers that have limited number of threads to handle requests.
+			\item \textbf{No Buffering} - A NodeJS server never buffers data, but instead outputs data in chunks.
+		\end{itemize}
+			
+		\subsection{DBMS: MongoDB}
+		\begin{flushleft}
+			MongoDB is a NoSQL database developed to deal with the limitations of SQL databases which include scalability, multi-structured data, goe-distribution and agile developments sprints. It stores data in flexible, JSON-like documents where fields can vary from document to document. This implies that the data structure can change over time. The document model maps to objects in application code and makes data easy to work with. MongoDB uses Ad hoc queries, indexing and real-time aggregation to provide powerful ways to access and analyse data and it is free and open source.
+		\end{flushleft}
+
+	
+	
+	
+	\section{Supporting Software (Dario Vieira)}
+		\subsection{Google Places API}
+		\begin{flushleft}
+			This will be used to locate all places of interest in a certain area such as hospitals, schools, airports, etc. This will be necessary as producing a list of all the places on interest accurately is not viable.
+		\end{flushleft}
+\end{document}
