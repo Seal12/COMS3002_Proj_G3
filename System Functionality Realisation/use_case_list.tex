@@ -15,7 +15,7 @@
 	\tableofcontents
 	\clearpage
 	
-	\section{Use Case List}
+	\section{Introduction}
 	\begin{flushleft}
 		This section will contain a list of all the use cases identified using the user stories defined earlier in the sprint. The list of use cases below will be divided into three categories, namely:
 	\end{flushleft}
@@ -25,268 +25,267 @@
 		\item \textbf{Fluff}: use cases that enhance the system and improving the user experience.
 	\end{itemize}
 	
-		\subsection{Customer}
-		\begin{flushleft}
-			The following is a list of all use cases that are related to the customer. That is, the use cases that the customer will interact with.
-		\end{flushleft}
+	\section{Customer}
+	\begin{flushleft}
+		The following is a list of all use cases that are related to the customer. That is, the use cases that the customer will interact with.
+	\end{flushleft}
+
+		\subsection{Vital}
+			\begin{enumerate}[i]
+				\item \textbf{Customer Account}
+				\begin{itemize}
+					\item Create Account (CT-A01)
+					\item View Account Details (CT-A02)
+					\item Update Account Details (CT-A03)
+					\item Delete Account (CT-A04)
+				\end{itemize}
+				
+				\item \textbf{Customer Preferance List}
+				\begin{itemize}
+					\item Create Home Preference List (CT-B01)
+					\item View Home Prefenrence List (CT-B02)
+					\item Update Home Prefenrence List (CT-B03)
+					\item Delete Home Prefenrence List (CT-B04)
+				\end{itemize}
+				
+				\item \textbf{Customer Home Suggestions}
+				\begin{itemize}
+					\item View Suggested Homes (CT-C01)
+					\item Delete Suggested Home (CT-C02)
+				\end{itemize}
+				
+				\item \textbf{Customer Home Viewings}
+				\begin{itemize}
+					\item Create Viewing Time (CT-D01)
+					\item View Viewing Time (CT-D02)
+					\item Update Viewing Time (CT-D03)
+					\item Delete Viewing Time (CT-D04)
+				\end{itemize}
+			\end{enumerate}
+
+		\subsection{Complementary}
+			\begin{enumerate}[i]
+				\item \textbf{Customer Preference Comment}
+				\begin{itemize}
+					\item Create Prefence Comment (CT-E01)
+					\item View Prefence Comment (CT-E02)
+					\item Update Prefence Comment (CT-E03)
+					\item Delete Prefence Comment (CT-E04)
+				\end{itemize}
+				
+				\item \textbf{Home Availability/Status}
+				\begin{itemize}
+					\item Create (Add) Available Homes (CT-F01)
+					\item View Home Availability (CT-F02)
+					\item Delete Unavailable Homes (CT-F03)
+				\end{itemize}
+				
+				\item \textbf{Customer-REBroker Chat}
+				\begin{itemize}
+					\item Create Chat (CT-J01)
+					\item View Chat (CT-J02)
+					\item Update Chat (CT-J03)
+					\item Delete Chat (CT-J04)
+				\end{itemize}
+			\end{enumerate}
 	
-			\subsubsection{Vital}
-				\begin{enumerate}[i]
-					\item \textbf{Customer Account}
-					\begin{itemize}
-						\item Create Account (CT-A01)
-						\item View Account Details (CT-A02)
-						\item Update Account Details (CT-A03)
-						\item Delete Account (CT-A04)
-					\end{itemize}
-					
-					\item \textbf{Customer Preferance List}
-					\begin{itemize}
-						\item Create Home Preference List (CT-B01)
-						\item View Home Prefenrence List (CT-B02)
-						\item Update Home Prefenrence List (CT-B03)
-						\item Delete Home Prefenrence List (CT-B04)
-					\end{itemize}
-					
-					\item \textbf{Customer Home Suggestions}
-					\begin{itemize}
-						\item View Suggested Homes (CT-C01)
-						\item Delete Suggested Home (CT-C02)
-					\end{itemize}
-					
-					\item \textbf{Customer Home Viewings}
-					\begin{itemize}
-						\item Create Viewing Time (CT-D01)
-						\item View Viewing Time (CT-D02)
-						\item Update Viewing Time (CT-D03)
-						\item Delete Viewing Time (CT-D04)
-					\end{itemize}
-				\end{enumerate}
-	
-			\subsubsection{Complementary}
-				\begin{enumerate}[i]
-					\item \textbf{Customer Preference Comment}
-					\begin{itemize}
-						\item Create Prefence Comment (CT-E01)
-						\item View Prefence Comment (CT-E02)
-						\item Update Prefence Comment (CT-E03)
-						\item Delete Prefence Comment (CT-E04)
-					\end{itemize}
-					
-					\item \textbf{Home Availability/Status}
-					\begin{itemize}
-						\item Create (Add) Available Homes (CT-F01)
-						\item View Home Availability (CT-F02)
-						\item Delete Unavailable Homes (CT-F03)
-					\end{itemize}
-					
-					\item \textbf{Customer-REBroker Chat}
-					\begin{itemize}
-						\item Create Chat (CT-J01)
-						\item View Chat (CT-J02)
-						\item Update Chat (CT-J03)
-						\item Delete Chat (CT-J04)
-					\end{itemize}
-				\end{enumerate}
-		
-			\subsubsection{Fluff}
-				\begin{enumerate}[i]
-					\item \textbf{Customer Search Histomer}
-					\begin{itemize}
-						\item Create Search History (CT-G01)
-						\item View Search History (CT-G02)
-						\item Update Search History (CT-G03)
-						\item Delete Search History (CT-G04)
-					\end{itemize}
-					
-					\item \textbf{Customer Bond Calculation}
-					\begin{itemize}
-						\item Create Bond Calculation (CT-H01)
-						\item View Bond Calculation (CT-H02)
-						\item Update Bond Calculation (CT-H03)
-						\item Delete Bond Calculation (CT-H04)
-					\end{itemize}
-					
-					\item \textbf{Home Search Advice}
-					\begin{itemize}
-						\item View Home Search Advice (CT-I01)
-					\end{itemize}
-				\end{enumerate}
+		\subsection{Fluff}
+			\begin{enumerate}[i]
+				\item \textbf{Customer Search Histomer}
+				\begin{itemize}
+					\item Create Search History (CT-G01)
+					\item View Search History (CT-G02)
+					\item Update Search History (CT-G03)
+					\item Delete Search History (CT-G04)
+				\end{itemize}
+				
+				\item \textbf{Customer Bond Calculation}
+				\begin{itemize}
+					\item Create Bond Calculation (CT-H01)
+					\item View Bond Calculation (CT-H02)
+					\item Update Bond Calculation (CT-H03)
+					\item Delete Bond Calculation (CT-H04)
+				\end{itemize}
+				
+				\item \textbf{Home Search Advice}
+				\begin{itemize}
+					\item View Home Search Advice (CT-I01)
+				\end{itemize}
+			\end{enumerate}
 		
 
-		\subsection{REBroker}
-		\begin{flushleft}
-			The following is a list of all use cases that are related to the REBroker. That is, the use cases that the Real Estate Broker will interact with.
-		\end{flushleft}
-			
-			\subsubsection{Vital}
-			\begin{enumerate}[i]
-				\item \textbf{REBroker Account}
-				\begin{itemize}
-					\item Create Account (REB-A01)
-					\item View Account Details (REB-A02)
-					\item Update Account Dtails (REB-A03)
-					\item Delete Account (REB-A04)
-				\end{itemize}
-				
-				\item \textbf{Client List}
-				\begin{itemize}
-					\item View Client List (REB-B01)
-					\item Delete Client (REB-B02)
-				\end{itemize}
-				
-				\item \textbf{Client Home List}
-				\begin{itemize}
-					\item View Client Home Matches (REB-C01)
-					\item Update Client Home Matches (REB-C02)
-				\end{itemize}
-				
-				\item \textbf{Property Status}
-				\begin{itemize}
-					\item View Home Status (REB-D01)
-					\item Update Home Status (REB-D02)
-				\end{itemize}
-				\item \textbf{Viewing Time}
-				\begin{itemize}
-					\item Create Viewing Time (REB-E01)
-					\item View Viewing Time (REB-E02)
-					\item Update Viewing Time (REB-E03)
-					\item Delete Viewing Time (REB-E04)
-				\end{itemize}
-			\end{enumerate}
-			
-			\subsubsection{Complementary}
-			\begin{enumerate}[i]
-				\item \textbf{Home Management}
-				\begin{itemize}
-					\item Create Home (REB-F01)
-					\item View Home Details (REB-F02)
-					\item Update Home Details (REB-F03)
-					\item Delete Home (REB-F04)
-				\end{itemize}
-				
-				\item \textbf{Client Preference Comment}
-				\begin{itemize}
-					\item View Client Prefeence Comment (REB-G01)
-				\end{itemize}
-				
-				\item \textbf{Client-REBroker Chat}
-				\begin{itemize}
-					\item Create Chat (REB-H01)
-					\item View Chat Messages (REB-H01)
-					\item Update Chat Messages (REB-H01)
-					\item Delete Chat (REB-H01)
-				\end{itemize}
-			\end{enumerate}
-			
-			\subsubsection{Fluff}
-			\begin{enumerate}[i]
-				\item \textbf{Client Preference Importance}
-				\begin{itemize}
-					\item View Client Prefence Importance (REB-I01)
-					\item Update Client Prefence Importance (REB-I02)
-				\end{itemize}
-			\end{enumerate}
-		
-		\subsection{REManager}
-		\begin{flushleft}
-			The following is a list of all use cases that are related to the REManager. That is, the use cases that the Real Estate Manager will interact with.
-		\end{flushleft}
-		
-			\subsubsection{Vital}
-			\begin{enumerate}[i]
-				\item \textbf{REManager Account}
-				\begin{itemize}
-					\item Create REManager Account (REM-A01)
-					\item View REManager Account Details (REM-A02)
-					\item Update REManager Account Details (REM-A03)
-					\item Delete REManager Account (REM-A04)
-				\end{itemize}
-				
-				\item \textbf{Application Management}
-				\begin{itemize}
-					\item View Application (REM-B01)
-					\item Update Application status (REM-B02)
-				\end{itemize}
-				
-				\item \textbf{Employee Management}
-				\begin{itemize}
-					\item Create Employee (REM-C01)
-					\item View Employee Details (REM-C02)
-					\item Update Employee Details (REM-C03)
-					\item Delete Employee (REM-C04)
-				\end{itemize}
-				
-				\item \textbf{Transaction Management}
-				\begin{itemize}
-					\item Create (Record) Transaction  (REM-D01)
-					\item Veiw Transactions  (REM-D02)
-					\item Update Transactions  (REM-D03)
-					\item Delete Transaction  (REM-D04)
-				\end{itemize}
-				
-				\item \textbf{Finantial Statement}
-				\begin{itemize}
-					\item Create Financial Statement (REM-E01)
-					\item View Financial Statement (REM-E01)
-					\item Delete Financial Statement (REM-E01)
-				\end{itemize}
-			\end{enumerate}
-			
-			\subsubsection{Complementary}
-			\begin{enumerate}[i]
-				\item \textbf{inventory Management}
-				\begin{itemize}
-					\item Create Inventory Item (REM-F01)
-					\item View Inventory (REM-F02)
-					\item Update Inventory (REM-F03)
-					\item Delete Inventory Item (REM-F04)
-				\end{itemize}
-				
-				\item \textbf{Budget Management}
-				\begin{itemize}
-					\item Create Budget (REM-G01)
-					\item View Budget (REM-G02)
-					\item Update Budget (REM-G03)
-					\item Delete Budget (REM-G04)
-				\end{itemize}
-				
-				\item \textbf{Homes Sold}
-				\begin{itemize}
-					\item View Sold Homes (REM-H01)
-				\end{itemize}
-			\end{enumerate}
-			
-			\subsubsection{Fluff}
-			\begin{enumerate}[i]
-				\item \textbf{Statistic Reports}
-				\begin{itemize}
-					\item Create Report (REM-I01)
-					\item View Report (REM-I02)
-					\item Update/Modify Report (REM-I03)
-					\item Delete Report (REM-I04)
-				\end{itemize}
-				
-				\item \textbf{Report Graphs}
-				\begin{itemize}
-					\item Create Graph (REM-J01)
-					\item View Graph (REM-J01)
-					\item Update/Modify Graph (REM-J01)
-					\item Delete Graph (REM-J01)
-				\end{itemize}
-				
-				\item \textbf{Budger History}
-				\begin{itemize}
-					\item View Past Bugdets
-					\item Restore Budget
-				\end{itemize}
-				
-			\end{enumerate}
-	
-	\section{Partailly dresses Use Case Descritions}
+	\section{REBroker}
 	\begin{flushleft}
-		This section will include a partially dressed use case description of the vital use cases as listed in the above section. This description will include use case ID, name, scope, trigger event, description, actors, related use cases, pre-conditions and post-conditions.
+		The following is a list of all use cases that are related to the REBroker. That is, the use cases that the Real Estate Broker will interact with.
+	\end{flushleft}
+		
+		\subsection{Vital}
+		\begin{enumerate}[i]
+			\item \textbf{REBroker Account}
+			\begin{itemize}
+				\item Create Account (REB-A01)
+				\item View Account Details (REB-A02)
+				\item Update Account Dtails (REB-A03)
+				\item Delete Account (REB-A04)
+			\end{itemize}
+			
+			\item \textbf{Client List}
+			\begin{itemize}
+				\item View Client List (REB-B01)
+				\item Delete Client (REB-B02)
+			\end{itemize}
+			
+			\item \textbf{Client Home List}
+			\begin{itemize}
+				\item View Client Home Matches (REB-C01)
+				\item Update Client Home Matches (REB-C02)
+			\end{itemize}
+			
+			\item \textbf{Property Status}
+			\begin{itemize}
+				\item View Home Status (REB-D01)
+				\item Update Home Status (REB-D02)
+			\end{itemize}
+			\item \textbf{Viewing Time}
+			\begin{itemize}
+				\item Create Viewing Time (REB-E01)
+				\item View Viewing Time (REB-E02)
+				\item Update Viewing Time (REB-E03)
+				\item Delete Viewing Time (REB-E04)
+			\end{itemize}
+		\end{enumerate}
+		
+		\subsection{Complementary}
+		\begin{enumerate}[i]
+			\item \textbf{Home Management}
+			\begin{itemize}
+				\item Create Home (REB-F01)
+				\item View Home Details (REB-F02)
+				\item Update Home Details (REB-F03)
+				\item Delete Home (REB-F04)
+			\end{itemize}
+			
+			\item \textbf{Client Preference Comment}
+			\begin{itemize}
+				\item View Client Prefeence Comment (REB-G01)
+			\end{itemize}
+			
+			\item \textbf{Client-REBroker Chat}
+			\begin{itemize}
+				\item Create Chat (REB-H01)
+				\item View Chat Messages (REB-H01)
+				\item Update Chat Messages (REB-H01)
+				\item Delete Chat (REB-H01)
+			\end{itemize}
+		\end{enumerate}
+		
+		\subsection{Fluff}
+		\begin{enumerate}[i]
+			\item \textbf{Client Preference Importance}
+			\begin{itemize}
+				\item View Client Prefence Importance (REB-I01)
+				\item Update Client Prefence Importance (REB-I02)
+			\end{itemize}
+		\end{enumerate}
+	
+	\section{REManager}
+	\begin{flushleft}
+		The following is a list of all use cases that are related to the REManager. That is, the use cases that the Real Estate Manager will interact with.
 	\end{flushleft}
 	
+		\subsection{Vital}
+		\begin{enumerate}[i]
+			\item \textbf{REManager Account}
+			\begin{itemize}
+				\item Create REManager Account (REM-A01)
+				\item View REManager Account Details (REM-A02)
+				\item Update REManager Account Details (REM-A03)
+				\item Delete REManager Account (REM-A04)
+			\end{itemize}
+			
+			\item \textbf{Application Management}
+			\begin{itemize}
+				\item View Application (REM-B01)
+				\item Update Application status (REM-B02)
+			\end{itemize}
+			
+			\item \textbf{Employee Management}
+			\begin{itemize}
+				\item Create Employee (REM-C01)
+				\item View Employee Details (REM-C02)
+				\item Update Employee Details (REM-C03)
+				\item Delete Employee (REM-C04)
+			\end{itemize}
+			
+			\item \textbf{Transaction Management}
+			\begin{itemize}
+				\item Create (Record) Transaction  (REM-D01)
+				\item Veiw Transactions  (REM-D02)
+				\item Update Transactions  (REM-D03)
+				\item Delete Transaction  (REM-D04)
+			\end{itemize}
+			
+			\item \textbf{Finantial Statement}
+			\begin{itemize}
+				\item Create Financial Statement (REM-E01)
+				\item View Financial Statement (REM-E01)
+				\item Delete Financial Statement (REM-E01)
+			\end{itemize}
+		\end{enumerate}
+		
+		\subsection{Complementary}
+		\begin{enumerate}[i]
+			\item \textbf{inventory Management}
+			\begin{itemize}
+				\item Create Inventory Item (REM-F01)
+				\item View Inventory (REM-F02)
+				\item Update Inventory (REM-F03)
+				\item Delete Inventory Item (REM-F04)
+			\end{itemize}
+			
+			\item \textbf{Budget Management}
+			\begin{itemize}
+				\item Create Budget (REM-G01)
+				\item View Budget (REM-G02)
+				\item Update Budget (REM-G03)
+				\item Delete Budget (REM-G04)
+			\end{itemize}
+			
+			\item \textbf{Homes Sold}
+			\begin{itemize}
+				\item View Sold Homes (REM-H01)
+			\end{itemize}
+		\end{enumerate}
+		
+		\subsection{Fluff}
+		\begin{enumerate}[i]
+			\item \textbf{Statistic Reports}
+			\begin{itemize}
+				\item Create Report (REM-I01)
+				\item View Report (REM-I02)
+				\item Update/Modify Report (REM-I03)
+				\item Delete Report (REM-I04)
+			\end{itemize}
+			
+			\item \textbf{Report Graphs}
+			\begin{itemize}
+				\item Create Graph (REM-J01)
+				\item View Graph (REM-J01)
+				\item Update/Modify Graph (REM-J01)
+				\item Delete Graph (REM-J01)
+			\end{itemize}
+			
+			\item \textbf{Budger History}
+			\begin{itemize}
+				\item View Past Bugdets
+				\item Restore Budget
+			\end{itemize}
+			
+		\end{enumerate}
+	
+	\section{Conclutions}
+	\begin{flushleft}
+		The use cases listen above can be be directly translated as the systems functionality. They have also been categorised into different categories so as to identify which use cases are more important than others. This will prove usefull if there is a limited amount of time to create the system and allow the development team to focus on what is more important first.
+	\end{flushleft}
 	
 \end{document}
