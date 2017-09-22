@@ -1,0 +1,22 @@
+{
+  "name": "ideal-home-locator",
+  "version": "1.0.0",
+  "description": "A web application used to help a real estate company with day to day oparations. This ranges from hepling them recoment homes to their clients to helping managers with hiring employees and managing finances.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seal12/COMS3002_Proj_G3.git"
+  },
+  "author": "Aobakwe Mosweu, Dario Vieira, Seale Rapolai, Wade Downton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seal12/COMS3002_Proj_G3/issues"
+  },
+  "homepage": "https://github.com/Seal12/COMS3002_Proj_G3#readme",
+  "dependencies": {
+    "mysql": "^2.14.1"
+  }
+}
