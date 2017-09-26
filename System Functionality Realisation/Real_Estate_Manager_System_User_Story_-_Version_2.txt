@@ -1,0 +1,33 @@
+Wade Downton (1171712)
+Real Estate Manager User Story
+
+The Real Estate Manager: 	
+
+	Responsible for accepting new employees as broker/agents and does the
+	various accounting/auditing services.
+
+As a Real Estate Manager, I want to be able to view all prospective empolyees 
+as a list so that it is easy to select between different employee applications.
+
+As a Real Estate Manager, I want to be able to view all essential employee infomation
+in a compact, easy to read format so that I can manage my employees more efficiently.
+
+As a Real Estate Manager, I want the ability to reject, accept or possibly waitlist 
+applications on the spot so that it is quick and efficent for me to move onto the 
+next application.
+
+As a Real Estate Manager, I want a simple accounting interface so that I can work
+efficently in managing user finances and auditing their and company infomation.
+*As a Real Estate Manager, I want to be able to record company's income and expenses so that I can keep track of it's finances.
+*As a Real Estate Manager, I want to be able to view financial statements for any time period.
+*As a Real Estate Manager, I want to be able to manage the company's budget. so that I can see what t can afford.
+*As a Real Estate Manager, I want to be to manage the company's inventory so taht  I can keep track of what resources it has.
+
+As a Real Estate Manager, I want to be able to see statistics about the number of homes sold, so that I can track its perfomance and make decitions based on that.
+*As a Real Estate Manager, I want to be able to see the number of homes sold in a certian period, so that I can see how well the REBrokers are performing.
+*As a Real Estate Manager, I want to be able to see the numer of homes sold by a particular REBroker, so that I can track the performance of the REBroker.
+*As a Real Estate Manager, I want to be able to compare the number of homes sold in certain regions, so I can see which regions are more popular than others.
+
+As a User, I want to be able to easily enter my financial infomation so that I 
+can move onto the next stage in the application and my infomation can then
+be recorded and audited.

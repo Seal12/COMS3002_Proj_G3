@@ -1,0 +1,17 @@
+Seale Rapolai
+Real Estate Broker System User Stories
+
+Broker:
+-Brokers and agents are responsible for helping customers to find their ideal home. They analyse the customer's requirements and identifies which home will best suit them. They also manage the available homes and take customers for viewings.
+
+User Stories:
+-As a Broker/Agent, I want to be able to view a list of clients that are looking for a home, so that I can manage the clients in a more efficient and organized way.
+-As a Broker/Agent, I want to be able to view a list of homes that a specific customer/client may like along with a rating of the likihood of the client being happy in that home, so that I can choose which homes to recommend them to view.
+-As a Broker/Agent, I want to be able to view a client's reason(s)/comments for looking for a specific type of home, so that I can better understand what they're looking for and hence recommend the best possible home.
+-As a Broker/Agent, I want to be able to change/modify/set the importance of the individual criteria used to generate the list of homes a client may like, so that a better list of homes the client may like more may be generated.
+-As a Broker/Agent, I want to be able to manage the status of a home, so that homes that are taken are taken off the market and homes that vacant can be added.
+-As a Broker/Agent, I want t be able to manage (edit) details about a home, to make it easier for clients' to find their ideal home.
+  *These details may include: number of rooms, size of house or days when the home is not available (if home is rental).
+-As a Broker/Agent, I want to be able to manage (add, remove or move) viewing times of a house so that clients can view the potential homes at their convenience and avoid overbooking.
+-As a Broker/Agent, I want to be able to communicate with my client, so that we can contact each other and share information.
+

@@ -1,0 +1,24 @@
+Aobakwe Mosweu (1049090)
+Customer System User Story
+
+	Customer system : 
+
+		These are prospective customers of the real estate company. 
+		They utilise the system as described above.They can register and leave a set of criteria on the types of home or rental 
+		apartment being sought.A deadline by which they could be contacted.They could also modify their criteria if they
+		wish.
+
+* As a customer, I want to be able to provide all the details of my ideal home, so that I can find a home that matches my preferances.
+*As a customer, I want to be able to state reason or add comments about the type of home I am looking for, so that it is easier for the broker to find me a home.
+* As a customer I want to be able to view a list of availabe homes (with home images) that match my preferances, so that I can choose which house best suits me. to rent or buy.
+*As a customer I want to be notified when a liked home is off the market (sold/rented out), so that I know it it no longer available and I can look for alternative homes.
+**As a customer I want to be notified when an unavailable home I liked becomes available, so that I can have the options to buy if it my prefered home.
+*As a customer I want to be able to create an account where I can store and manage all my prefereances and home viewings, so that I can keep track of my home searchs and results.
+*As a customer I want to be able to edit my profile details, so that the latest data about me can be used for my home search.
+*As a customer I want to be able to have an option to view my recent searches and my recent purchases/sales, so that I can keep track of my home search.
+*As a customer I want to be able to search for advice about property when I want to buy/rent a home, so that it is easier to find an ideal homes.
+*As a customer I want to be able to calculate a bond amount with interest, so that I have a cost estimation of my ideal home.
+*As a customer I want to be able to communicate with my broker, so that we can contact each other and share information
+
+Other:
+*As a customer I want to be able to search for advice about property when I want to sell/buy/rent/auction a home, so that it is easier to find homes and/or buyers.
