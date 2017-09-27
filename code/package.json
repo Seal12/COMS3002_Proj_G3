@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Seal12/COMS3002_Proj_G3#readme",
   "dependencies": {
+    "express": "^4.15.5",
     "mysql": "^2.14.1"
   }
 }
