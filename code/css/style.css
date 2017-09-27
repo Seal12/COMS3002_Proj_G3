@@ -151,3 +151,14 @@ label {
   text-align: center;
   margin: 50px 0;
 }
+
+/****************************************/
+/**************Customer******************/
+/****************************************/
+.btn-box div{
+	height: auto;
+	margin-top: 10px;
+}
+.btn-box a{
+	float: left;
+}
