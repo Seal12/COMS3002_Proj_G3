@@ -1,44 +1,39 @@
-var http = require('http');
-var url = require('url');
-var fs = require('fs');
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
 
+//Choose PORT and start server
 const PORT = process.env.PORT || 8080;
+server.listen(PORT);
+console.log('Server running on PORT ' + PORT);
 
-console.log(process.pid);
-//require('daemon')();
-console.log("Server running on port " + PORT);
-console.log(process.pid);
+app.use(express.static('public'));
 
-http.createServer(function(req, res){
-    var q = url.parse(req.url, true);
-    var location = '.' + q.pathname;
-    var filename;
-    console.log("Going to " + filename);
+/***********************************************************/
+/************************Serve files************************/
+/***********************************************************/
+//Serve Web Pagess
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/login_cust.html');
+});
 
-    if (filename == "./") {
-        filename == "index.html"
-    }
-    switch (location) {
-        default: 
-            filename = "login_cust.html";
-            break;
-        case "customer":
-            filename = "login_cust.html";
-            break; 
-        case "broker":
-            filename = "login_broker.html";
-        case "manager":
-            filename = "manager.html";
-    }
-    console.log("Going to " + filename);
+app.get('/customer', function(req, res){
+    res.sendFile(__dirname + '/login_cust.html');
+});
 
-    fs.readFile(filename, function(err, data){
-        if(err){
-            res.writeHead(200, {'Content-Type': 'text/html'});
-            return res.end('404 Not Found.');
-        }
-        res.writeHead(200, {'COntent-Type': 'text/html'});
-        res.write(data);
-        return res.end();
-    });
-}).listen(PORT);
+app.get('/broker', function(req, res){
+    res.sendFile(__dirname + '/login_broker.html');
+});
+
+app.get('/manager', function(req, res){
+    res.sendFile(__dirname + '/login_manager.html');
+});
+
+//Serves all and any of the static files
+app.get(/^(.+)$/, function(req, res){ 
+	res.sendfile( __dirname + req.params[0]); 
+});
+
+process.on('uncaughtException', function(error){
+    console.log(error.stack);
+});
