@@ -1,0 +1,46 @@
+Overview of the project:
+
+The development and management of a system which performs as an ideal home locator for a user based on specific user input as well as a
+management system for real estate agents/brokers.
+
+Vision:
+
+To have developed a software system that intelligently recommends an ideal home for a buyer based on a number of input criteria of the  
+client. This input criteria is very specific and allows for the buyer to find exactly what they are looking for given a choice of possible 
+homes that meet their requirements. The system maintains a geo-spatial database of a region at the granularity of suburbs.
+
+Issue Statement:
+
+There is a need for a software system that will accurately determine the ideal home for a large number of people with very specific needs  
+in an immediate period of time using known listings of houses available. The system needs to be powerful and accurate as well as easy to use 
+for all users, i.e. potential customers and real estate agents/brokers.
+
+Method:
+
+The Agile software development life-cycle model will be used to approach the problem and formulate a solution. This lends itself well to  
+the Kaizen Blitz methodology in evaluating our software which will allow for the continuous improvement of the software as well as meeting 
+all of the customers' needs. A basic model of the software will be created and from then onwards the software will continuously be improved 
+to the point of optimization within the software as well as customer satisfaction.
+
+Project objectives:
+
+	- Design and create an optimized database to store user and home data.
+	- Design and create a simple, effective user interface for buyers, real estate agents/brokers and administrators.
+	- Implement an effective searching tool which will provide for output specified by the buyers input criteria.
+	- Provide for an effective communication tool between buyers and real estate agents/brokers when the buyer has an interest in a 
+	  particular property.
+
+Stakeholders:
+
+	-Users: 
+	
+	This includes potential buyers of houses, real estate agents and brokers. These are the people that will use the software for
+	its created purpose. All users need the software to perform different jobs effectively and they all depend on one another to work.
+
+		
+	-Developers:
+
+	This is the team of software developers and administrators. They are in charge of developing and improving the existing software.
+	Administrators ensure there are no problems in data management with regards to the databases. The users depend heavily on the
+	developers for efficient, working software that will fulfil their needs.
+
