@@ -131,34 +131,122 @@ label {
   background: #0d8aee;
   color: #deeffd;
 }
-.btn.btn-submit {
-  background: #801515;
-  color: #bce0fb;
-}
-.btn.btn-submit:hover {
-  background: #550000;
-  color: #deeffd;
-}
-.btn.btn-cancel {
-  background: #eee;
-}
-.btn.btn-cancel:hover {
-  background: #e1e1e1;
-  color: #8b8b8b;
-}
 
 .btn-box {
   text-align: center;
   margin: 50px 0;
 }
+.btn-box div{
+  height: auto;
+  margin-top: 10px;
+}
+.btn-box a{
+  float: left;
+}
 
 /****************************************/
 /**************Customer******************/
 /****************************************/
-.btn-box div{
-	height: auto;
-	margin-top: 10px;
+.customer .bar:before {
+  background: #7E1518;
 }
-.btn-box a{
-	float: left;
+.customer form h1 {
+  color: #7E1518;
+}
+.customer form h5 {
+  color: #7E1518;
+}
+.customer input,
+.customer textarea {
+  color: #7E1518;
+}
+.customer input:focus ~ label, .customer input:valid ~ label,
+.customer textarea:focus ~ label,
+.customer textarea:valid ~ label {
+  color: #7E1518;
+}
+.customer label {
+  color: #7E1518;
+}
+
+.customer .btn.btn-submit {
+  background: #7E1518;
+}
+.customer .btn.btn-submit:hover {
+  background: #550000;
+}
+
+/****************************************/
+/***************Broker*******************/
+/****************************************/
+.broker .bar:before {
+  background: #035F79;
+}
+.broker form h1 {
+  color: #024255;
+}
+.broker form h5 {
+  color: #024255;
+}
+.broker input,
+.broker textarea {
+  color: #024255;
+}
+.broker input:focus ~ label, .broker input:valid ~ label,
+.broker textarea:focus ~ label,
+.broker textarea:valid ~ label {
+  color: #024255;
+}
+.broker label {
+  color: #024255;
+}
+
+.broker .btn.btn-submit {
+  background: #035F79;
+}
+.broker .btn.btn-submit:hover {
+  background: #024255;
+}
+
+/*Nav bar*/
+.broker .navbar{
+  background-color: #0F87AB;
+  border-color: #0F87AB;
+  border-radius: 0px;
+}
+.broker .navbar-inverse .navbar-nav>.active>a, 
+.broker .navbar-inverse .navbar-nav>.active>a:focus, 
+.broker .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: #035F79 !important;
+}
+/****************************************/
+/**************Manager*******************/
+/****************************************/
+.manager .bar:before {
+  background: #024255;
+}
+.manager form h1 {
+  color: #024255;
+}
+.manager form h5 {
+  color: #024255;
+}
+.manager input,
+.manager textarea {
+  color: #024255;
+}
+.manager input:focus ~ label, .manager input:valid ~ label,
+.manager textarea:focus ~ label,
+.manager textarea:valid ~ label {
+  color: #024255;
+}
+.manager label {
+  color: #024255;
+}
+
+.manager .btn.btn-submit {
+  background: #035F79;
+}
+.manager .btn.btn-submit:hover {
+  background: #024255;
 }
