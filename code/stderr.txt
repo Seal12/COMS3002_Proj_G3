@@ -1,0 +1,5 @@
+Fri, 29 Sep 2017 14:33:13 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:38:6
+Error: ENOENT: no such file or directory, stat '/home/linux1/COMS3002_SE/COMS3002_Proj_G3/code/testproxy.php'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/linux1/COMS3002_SE/COMS3002_Proj_G3/code/favicon.ico'
+    at Error (native)
