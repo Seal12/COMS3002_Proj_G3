@@ -176,6 +176,25 @@ label {
   background: #550000;
 }
 
+/*Nav bar*/
+.customer .navbar{
+  background-color: #801515;
+  border-color: #801515;
+  border-radius: 0px;
+}
+.customer .navbar-inverse .navbar-nav>.active>a, 
+.customer .navbar-inverse .navbar-nav>.active>a:focus, 
+.customer .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: #550000 !important;
+}
+
+/*Home Page*/
+.customer #accordion .panel-heading:hover{
+  background-color: #0F87AB;
+}
+.customer #accordion .panel-heading .badge{
+  float: right;
+}
 /****************************************/
 /***************Broker*******************/
 /****************************************/
@@ -218,6 +237,14 @@ label {
 .broker .navbar-inverse .navbar-nav>.active>a:focus, 
 .broker .navbar-inverse .navbar-nav>.active>a:hover{
   background-color: #035F79 !important;
+}
+
+/*Home Page*/
+.broker #accordion .panel-heading:hover{
+  background-color: #0F87AB;
+}
+.broker #accordion .panel-heading .badge{
+  float: right;
 }
 /****************************************/
 /**************Manager*******************/

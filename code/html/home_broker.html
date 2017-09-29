@@ -16,10 +16,10 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">IHL</a>
+                    <a class="navbar-brand" href="home_broker.html">IHL</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="home_broker.html">Home</a></li>
                     <li><a href="time_table.html">Time Table</a></li>
                     <li><a href="account_broker.html">Account</a></li>
                 </ul>
@@ -28,14 +28,53 @@
                 </ul>
             </div>
         </nav>
-    <!--Page Content-->
-		<div class="left col-md-3 col-xs-0"></div>
-		<div id="Page-Content" class="col-md-6 col-xs-12">
-			<div class="page-data">
 
+    <!--Page Content-->
+		<div class="left col-md-1 col-xs-0"></div>
+		<div id="Page-Content" class="col-md-10 col-xs-12">
+			<div class="page-data">
+                <h1>Client List</h1>
+                
+                <div class="container">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                <h4 class="panel-title">Client 1 Name <span class="badge">6</span></h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Client's preference comment of any other data about the client.</p>
+                                    <button class="btn btn-submit btn-house-recommendations" type="submit">View Homes</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <h4 class="panel-title">Client 2 Name <span class="badge">15</span></h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Client's preference comment of any other data about the client.</p>
+                                    <button class="btn btn-submit btn-house-recommendations" type="submit">View Homes</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <h4 class="panel-title">Client 3 Name <span class="badge">3</span></h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Client's preference comment of any other data about the client.</p>
+                                    <button class="btn btn-submit btn-house-recommendations" type="submit">View Homes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
 			</div>
 		</div>
-		<div class="right col-md-3 col-xs-0"></div>
+		<div class="right col-md-1 col-xs-0"></div>
 	</div>
 
     <!--Scripts-->

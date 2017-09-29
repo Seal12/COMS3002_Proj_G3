@@ -8,7 +8,6 @@ server.listen(PORT);
 console.log('Server running on PORT ' + PORT);
 
 app.use(express.static('public'));
-
 /***********************************************************/
 /************************Serve files************************/
 /***********************************************************/
@@ -35,7 +34,7 @@ app.get('/manager', function(req, res){
 
 //Serves all and any of the static files
 app.get(/^(.+)$/, function(req, res){ 
-	res.sendfile( __dirname + req.params[0]); 
+	res.sendFile( __dirname + req.params[0]); 
 });
 
 process.on('uncaughtException', function(error){
