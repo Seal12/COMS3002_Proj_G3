@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.27)  27 SEP 2017 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.27)  30 SEP 2017 16:26
 entering extended mode
 **./UsesCases.tex
 (UsesCases.tex
@@ -161,25 +161,50 @@ Overfull \hbox (78.999pt too wide) in paragraph at lines 25--26
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Overfull \hbox (3.16846pt too wide) in paragraph at lines 29--33
+\OT1/cmr/m/n/14.4 pli-ca-tion (in-cludes the cus-tomer pref-er-ences) and the G
+oogle
+ []
+
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./SSDCreateEmployeeV1.png
->] [2 <./SSDCreateHomeApplication.png>] (UsesCases.aux) ) 
+>] [2 <./SSDCreateHomeApplication.png>]
+<StateMachineDiagramHome.png, id=13, 554.07pt x 257.46187pt>
+File: StateMachineDiagramHome.png Graphic file (type png)
+
+<use StateMachineDiagramHome.png>
+Package pdftex.def Info: StateMachineDiagramHome.png used on input line 42.
+(pdftex.def)             Requested size: 387.84636pt x 180.22206pt.
+ [3 <./StateMachineDiagramHome.png>]
+<SSDCreateHomeSuggestion.png, id=17, 669.2503pt x 244.66406pt>
+File: SSDCreateHomeSuggestion.png Graphic file (type png)
+
+<use SSDCreateHomeSuggestion.png>
+Package pdftex.def Info: SSDCreateHomeSuggestion.png used on input line 55.
+(pdftex.def)             Requested size: 468.47202pt x 171.26366pt.
+
+Overfull \hbox (78.47202pt too wide) in paragraph at lines 55--56
+ [][] 
+ []
+
+[4 <./SSDCreateHomeSuggestion.png>] (UsesCases.aux) ) 
 Here is how much of TeX's memory you used:
- 1494 strings out of 493323
- 21368 string characters out of 3139066
+ 1504 strings out of 493323
+ 21676 string characters out of 3139066
  79834 words of memory out of 3000000
- 5048 multiletter control sequences out of 15000+200000
+ 5056 multiletter control sequences out of 15000+200000
  5049 words of font info for 19 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,25p,355b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb>
-Output written on UsesCases.pdf (2 pages, 68675 bytes).
+ 39i,6n,25p,418b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb>
+Output written on UsesCases.pdf (4 pages, 94965 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 31 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
