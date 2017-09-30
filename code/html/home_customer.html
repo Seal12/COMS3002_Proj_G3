@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Home| IHL</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
     <!--Custome Styles-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -31,13 +30,39 @@
       </div>
     </nav>
     <!--Page Content-->
-		<div class="left col-md-3 col-xs-0"></div>
-		<div id="Page-Content" class="col-md-6 col-xs-12">
-			<div class="page-data">
+		<div class="left col-md-1 col-xs-0"></div>
+		<div id="Page-Content" class="col-md-10 col-xs-12">
+        <!--Search-->
+            <div class="search-section">
+            <!--Search bar-->
+                <form id="form-search-homes" role="form">
+                    <div class="search-wrap">
+                        <button class="search-button" type="submit" title="Start Search">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                        <input type="text" class="input-field" placeholder="Search Location...">
+                    </div>
+                </form>
+            <!--Filter Options-->
+                <div class="filter-ops">
+                    <ul>
+                        <li>min value</li>
+                        <li>max value</li>
+                        <li>Property Type</li>
+                        <li>Num Beds</li>
+                        <li>Num bathrooms</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">Advanced Search</a>
+                </div>
+                <div class="order-options">combo box</div>
+            </div>
+        <!--Houses-->
 
-			</div>
 		</div>
-		<div class="right col-md-3 col-xs-0"></div>
+		<div class="right col-md-1 col-xs-0"></div>
 	</div>
 
     <!--Scripts-->
