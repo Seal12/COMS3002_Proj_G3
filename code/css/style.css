@@ -158,7 +158,10 @@ input[type="password"] {
 
 #form-search-homes{
   margin: 10px;
-  width: 400px;
+  width: 100%;
+}
+.panel{
+  margin-bottom: 5px !important;
 }
 .search-wrap{
   position: relative;
@@ -223,6 +226,7 @@ input[type="password"] {
 }
 #form-preferences{
   margin: 10px 0;
+  width: 100%;
 }
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
@@ -395,7 +399,9 @@ label:hover:before {
 label:hover:before {
   border: 2px solid #801515!important;
 }
-
+.home-preferences .container{
+  padding: 0;
+}
 /*Sell Home*/
 .metadata-list{
   overflow: auto;
