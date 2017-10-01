@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Home| IHL</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
 
     <!--Custome Styles-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -13,56 +14,214 @@
 <body>
 	<div id="Page" class="customer">
     <!--Navbar-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="home_customer.html">IHL</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="home_customer.html">Home</a></li>
-          <li><a href="preferences_customer.html">Prefences</a></li>
-          <li><a href="sell_home.html">Sell Home</a></li>
-          <li><a href="account_customer.html">Account</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-      </div>
-    </nav>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="home_customer.html">IHL</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home_customer.html">Home</a></li>
+                    <li><a href="preferences_customer.html">Prefences</a></li>
+                    <li><a href="sell_home.html">Sell Home</a></li>
+                    <li><a href="account_customer.html">Account</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
     <!--Page Content-->
-		<div class="left col-md-1 col-xs-0"></div>
-		<div id="Page-Content" class="col-md-10 col-xs-12">
+		<div class="left col-lg-2 col-md-1 col-xs-0"></div>
+		<div id="Page-Content" class="col-lg-8 col-md-10 col-xs-12">
         <!--Search-->
             <div class="search-section">
             <!--Search bar-->
                 <form id="form-search-homes" role="form">
                     <div class="search-wrap">
-                        <button class="search-button" type="submit" title="Start Search">
+                        <button class="search-button" type="submit" title="Start Search" style="float: right;">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
-                        <input type="text" class="input-field" placeholder="Search Location...">
+                       <input type="text" class="input-field" placeholder="Search a Surburb...">
                     </div>
                 </form>
             <!--Filter Options-->
                 <div class="filter-ops">
                     <ul>
-                        <li>min value</li>
-                        <li>max value</li>
-                        <li>Property Type</li>
-                        <li>Num Beds</li>
-                        <li>Num bathrooms</li>
+                        <li>
+                            <select class="form-control" id="Prop-type">
+                                <option value="">Property Type</option>
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                            </select>
+                        </li>
+                        <li>
+                            <!--<div id="slidecontainer">
+                                <input type="range" min="100" max="10000" value="50" class="slider" id="min-price">
+                            </div>-->
+                            <select class="form-control" id="min-price">
+                                <option value="">Min Price</option>
+                                <option value="100000">R100 000</option>
+                                <option value="200000">R200 000</option>
+                                <option value="300000">R300 000</option>
+                                <option value="400000">R400 000</option>
+                                <option value="500000">R500 000</option>
+                                <option value="600000">R600 000</option>
+                                <option value="700000">R700 000</option>
+                                <option value="800000">R800 000</option>
+                                <option value="900000">R900 000</option>
+                                <option value="1000000">R1 000 000</option>
+                                <option value="2000000">R2 000 000</option>
+                                <option value="3000000">R3 000 000</option>
+                                <option value="4000000">R4 000 000</option>
+                                <option value="5000000">R5 000 000</option>
+                                <option value="6000000">R6 000 000</option>
+                                <option value="7000000">R7 000 000</option>
+                                <option value="8000000">R8 000 000</option>
+                                <option value="9000000">R9 000 000</option>
+                                <option value="10000000">R10 000 000</option>
+                                <option value="10000000+">R10 000 000+</option>
+                            </select>
+                        </li>
+                        <li>
+                            <!--<div id="slidecontainer">
+                                <input type="range" min="100" max="10000" value="50" class="slider" id="min-price">
+                            </div>-->
+                            <select class="form-control" id="min-price">
+                                <option value="">Max Price</option>
+                                <option value="100000">R100 000</option>
+                                <option value="200000">R200 000</option>
+                                <option value="300000">R300 000</option>
+                                <option value="400000">R400 000</option>
+                                <option value="500000">R500 000</option>
+                                <option value="600000">R600 000</option>
+                                <option value="700000">R700 000</option>
+                                <option value="800000">R800 000</option>
+                                <option value="900000">R900 000</option>
+                                <option value="1000000">R1 000 000</option>
+                                <option value="2000000">R2 000 000</option>
+                                <option value="3000000">R3 000 000</option>
+                                <option value="4000000">R4 000 000</option>
+                                <option value="5000000">R5 000 000</option>
+                                <option value="6000000">R6 000 000</option>
+                                <option value="7000000">R7 000 000</option>
+                                <option value="8000000">R8 000 000</option>
+                                <option value="9000000">R9 000 000</option>
+                                <option value="10000000">R10 000 000</option>
+                                <option value="10000000+">R10 000 000+</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control" id="bed-rooms">
+                                <option value="">Num Beds</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control" id="bath-rooms">
+                                <option value="">Num Baths</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </li>
+                        </li>
                         <li></li>
                     </ul>
                 </div>
                 <div>
-                    <a href="#">Advanced Search</a>
+                    <a href="preferences_customer.html">Advanced Search</a>
                 </div>
-                <div class="order-options">combo box</div>
+            </div>
+        <!--Sorting-->
+            <div class="orderby">
+                <select class="form-control" id="bed-rooms">
+                    <option value="">Order by</option>
+                    <option value="price-lth">Price: low to high</option>
+                    <option value="price-htl">Price: high to low</option>
+                    <option value="prop-type">Property Type</option>
+                    <option value="recent">Most Recent</option>
+                </select>
             </div>
         <!--Houses-->
+            <div class="home-list">
+            <!--Home item-->
+                <div class="home-item">
+                    <div class="home-image col-md-4">
+                        <img src="../images/house.png">
+                    </div>
+                    <div class="home-details col-md-8">
+                        <h1><strong>R850 000</strong></h1>
+
+                        <h4><strong>Home address</strong></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor risus sed nisi fringilla scelerisque. Phasellus efficitur convallis imperdiet. Nullam laoreet iaculis arcu, at porta sem volutpat eu. Mauris a aliquam quam. Duis in pellentesque turpis. Nam et dictum metus, aliquet viverra lorem. Fusce nec posuere risus.</p>
+                        <div class="home-metadata">
+                            <span class="fa fa-bed fa-3x"> 3</span>
+                            <span class="fa fa-bath fa-3x"> 2</span>
+                            <span class="fa fa-car fa-3x"> 2</span>
+                        </div>
+                    </div>
+                </div>
+            <!--Home item-->
+                <div class="home-item">
+                    <div class="home-image col-md-4">
+                        <img src="../images/house.png">
+                    </div>
+                    <div class="home-details col-md-8">
+                        <h1><strong>R910 000</strong></h1>
+
+                        <h4><strong>Home address</strong></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor risus sed nisi fringilla scelerisque. Phasellus efficitur convallis imperdiet. Nullam laoreet iaculis arcu, at porta sem volutpat eu. Mauris a aliquam quam. Duis in pellentesque turpis. Nam et dictum metus, aliquet viverra lorem. Fusce nec posuere risus.</p>
+                        <div class="home-metadata">
+                            <span class="fa fa-bed fa-3x"> 3</span>
+                            <span class="fa fa-bath fa-3x"> 1</span>
+                            <span class="fa fa-car fa-3x"> 1</span>
+                        </div>
+                    </div>
+                </div>
+            <!--Home item-->
+                <div class="home-item">
+                    <div class="home-image col-md-4">
+                        <img src="../images/house.png">
+                    </div>
+                    <div class="home-details col-md-8">
+                        <h1><strong>R1 400 000</strong></h1>
+
+                        <h4><strong>Home address</strong></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor risus sed nisi fringilla scelerisque. Phasellus efficitur convallis imperdiet. Nullam laoreet iaculis arcu, at porta sem volutpat eu. Mauris a aliquam quam. Duis in pellentesque turpis. Nam et dictum metus, aliquet viverra lorem. Fusce nec posuere risus.</p>
+                        <div class="home-metadata">
+                            <span class="fa fa-bed fa-3x"> 3</span>
+                            <span class="fa fa-bath fa-3x"> 1</span>
+                            <span class="fa fa-car fa-3x"> 1</span>
+                        </div>
+                    </div>
+                </div>
+            <!--Home item-->
+                <div class="home-item">
+                    <div class="home-image col-md-4">
+                        <img src="../images/house.png">
+                    </div>
+                    <div class="home-details col-md-8">
+                        <h1><strong>R3 395 000</strong></h1>
+
+                        <h4><strong>Home address</strong></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor risus sed nisi fringilla scelerisque. Phasellus efficitur convallis imperdiet. Nullam laoreet iaculis arcu, at porta sem volutpat eu. Mauris a aliquam quam. Duis in pellentesque turpis. Nam et dictum metus, aliquet viverra lorem. Fusce nec posuere risus.</p>
+                        <div class="home-metadata">
+                            <span class="fa fa-bed fa-3x"> 4</span>
+                            <span class="fa fa-bath fa-3x"> 2</span>
+                            <span class="fa fa-car fa-3x"> 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 		</div>
-		<div class="right col-md-1 col-xs-0"></div>
+		<div class="right col-lg-2 col-md-1 col-xs-0"></div>
 	</div>
 
     <!--Scripts-->

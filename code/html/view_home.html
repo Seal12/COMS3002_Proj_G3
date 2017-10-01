@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Home| IHL</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+
+    <!--Custome Styles-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="Page" class="customer">
+    <!--Navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="home_customer.html">IHL</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="home_customer.html">Home</a></li>
+                    <li><a href="preferences_customer.html">Prefences</a></li>
+                    <li><a href="sell_home.html">Sell Home</a></li>
+                    <li><a href="account_customer.html">Account</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    <!--Page Content-->
+		<div class="left col-lg-2 col-md-1 col-xs-0"></div>
+		<div id="Page-Content" class="col-lg-8 col-md-10 col-xs-12">
+            <h1>View Home Details</h1>
+        <!--Home item-->
+            <div class="home-item" style="margin-bottom: 20px;">
+                <div class="home-image col-md-12">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                        <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="../images/house_1_1.jpeg" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="../images/house_1_2.jpeg" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="../images/house_1_3.jpeg" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="../images/house_1_4.jpeg" style="width:100%;">
+                                </div>
+                            </div>
+                        <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-details col-md-12">
+                    <h1><strong>R3 395 000</strong></h1>
+
+                    <h4><strong>Home address</strong></h4>
+                    <div class="home-metadata">
+                        <span class="fa fa-bed fa-3x"> 4</span>
+                        <span class="fa fa-bath fa-3x"> 2</span>
+                        <span class="fa fa-car fa-3x"> 2</span>
+                    </div>
+                </div>
+                <div class="home-metadata-expanded">
+                    <h3>Description</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor risus sed nisi fringilla scelerisque. Phasellus efficitur convallis imperdiet. Nullam laoreet iaculis arcu, at porta sem volutpat eu. Mauris a aliquam quam. Duis in pellentesque turpis. Nam et dictum metus, aliquet viverra lorem. Fusce nec posuere risus.</p>
+                    <div class="metadata-list">
+                        <div class="col-xs-6">Home Type</div><div class="col-xs-6">House</div>
+                        <div class="col-xs-6">Number of bedrooms</div><div class="col-xs-6">4</div>
+                        <div class="col-xs-6">Number of bathrooms</div><div class="col-xs-6">2</div>
+                        <div class="col-xs-6">Parking slotss</div><div class="col-xs-6">2</div>
+                        <div class="col-xs-6">Furnisshed</div><div class="col-xs-6">No</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="right col-lg-2 col-md-1 col-xs-0"></div>
+	</div>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/site_scripts.js"></script>
+</body>
+</html>
