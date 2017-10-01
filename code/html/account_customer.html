@@ -12,33 +12,94 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-	<div id="Page" class="customer">
+    <div id="Page" class="customer">
     <!--Navbar-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="home_customer.html">IHL</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="home_customer.html">Home</a></li>
-          <li><a href="preferences_customer.html">Prefences</a></li>
-          <li><a href="sell_home.html">Sell Home</a></li>
-          <li class="active"><a href="account_customer.html">Account</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-      </div>
-    </nav>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="home_customer.html">IHL</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="home_customer.html">Home</a></li>
+                    <li><a href="preferences_customer.html">Prefences</a></li>
+                    <li><a href="sell_home.html">Sell Home</a></li>
+                    <li class="active"><a href="account_customer.html">Account</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
     <!--Page Content-->
-		<div class="left col-md-3 col-xs-0"></div>
-		<div id="Page-Content" class="col-md-6 col-xs-12">
-			<div class="page-data">
-
-			</div>
-		</div>
-		<div class="right col-md-3 col-xs-0"></div>
-	</div>
+        <div class="left col-md-2 col-xs-0"></div>
+        <div id="Page-Content" class="col-md-8 col-xs-12">
+            <div class="page-data">
+                <div class="panel-group" id="accordion">
+                <!--Panel Item-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#customer-details">
+                                Customer Details
+                            </h3>
+                        </div>
+                        <div id="customer-details" class="panel-collapse collapse in">
+                            <div class="panel-body basic-data">
+                                <div class="dataItem col-lg-6 col-md-6 col-sm-6">
+                                    <h4><strong>Name</strong></h4>
+                                    <p>David</p>
+                                </div>
+                                <div class="dataItem col-lg-6 col-md-6 col-sm-6 ">
+                                    <h4><strong>Last Name</strong></h4>
+                                    <p>Jones</p>
+                                </div>
+                                <div class="dataItem col-lg-6 col-md-6 col-sm-6 ">
+                                    <h4><strong>Gender</strong></h4>
+                                    <p>Male</p>
+                                </div>
+                                <div class="dataItem col-lg-6 col-md-6 col-sm-6">
+                                    <h4><strong>email</strong></h4>
+                                    <p>d.Jones@example.com</p>
+                                </div>
+                                <div class="dataItem col-lg-6 col-md-6 col-sm-6">
+                                    <h4><strong>Phone</strong></h4>
+                                    <p>(+27) 78 984 5135</p>
+                                </div>
+                                <div class="dataItem col-sm-12">
+                                    <button id="btn-edit" class="btn btn-submit" type="button">edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--Panel Item-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#acc-settings">
+                                Account Settings
+                            </h3>
+                        </div>
+                        <div id="acc-settings" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
+                                    <label>Old Password</label>
+                                </div>
+                                <div class="group">
+                                    <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
+                                    <label>New Password</label>
+                                </div>
+                                <div class="group">
+                                    <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
+                                    <label>Confirm New Password</label>
+                                </div>
+                                <button id="btn-change-pass" class="btn btn-submit" type="submit">change password</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right col-md-2 col-xs-0"></div>
+    </div>
 
     <!--Scripts-->
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>

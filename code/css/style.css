@@ -193,7 +193,12 @@ label {
   border-color: #7E1518;
   outline: none;
 }
-
+#btn-book-viewing{
+  float: right;
+}
+.home-image{
+  margin-bottom: 10px;
+}
 .home-image .container{
   width: 100%;
   margin-top: 10px;
@@ -240,6 +245,7 @@ label {
 }
 .customer .btn.btn-submit:hover {
   background: #550000;
+  color: white;
 }
 
 /*Nav bar*/
@@ -259,7 +265,8 @@ label {
 
 /*Home Page*/
 .customer #accordion .panel-heading:hover{
-  background-color: #0F87AB;
+  background-color: #801515;
+  color: white;
 }
 .customer #accordion .panel-heading .badge{
   float: right;
@@ -291,6 +298,21 @@ label {
   padding: 5px 10px;
   background-color: #D2D2D2;
 }
+
+/*Account Page*/
+.basic-data{
+  border: 1px solid #B3B3B3;
+  overflow: auto;
+}
+.dataItem{
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.dataItem button{
+  float: right;
+  margin-left: 
+}
+
 /****************************************/
 /***************Broker*******************/
 /****************************************/
@@ -342,6 +364,7 @@ label {
 .broker #accordion .panel-heading .badge{
   float: right;
 }
+/*Account Page*/
 /****************************************/
 /**************Manager*******************/
 /****************************************/

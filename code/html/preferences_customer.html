@@ -14,31 +14,70 @@
 <body>
 	<div id="Page" class="customer">
     <!--Navbar-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="home_customer.html">IHL</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="home_customer.html">Home</a></li>
-          <li class="active"><a href="preferences_customer.html">Prefences</a></li>
-          <li><a href="sell_home.html">Sell Home</a></li>
-          <li><a href="account_customer.html">Account</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--Page Content-->
-		<div class="left col-md-3 col-xs-0"></div>
-		<div id="Page-Content" class="col-md-6 col-xs-12">
-			<div class="page-data">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="home_customer.html">IHL</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="home_customer.html">Home</a></li>
+                    <li class="active"><a href="preferences_customer.html">Prefences</a></li>
+                    <li><a href="sell_home.html">Sell Home</a></li>
+                    <li><a href="account_customer.html">Account</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Page Content-->
+        <div class="left col-md-3 col-xs-0"></div>
+        <div id="Page-Content" class="col-md-6 col-xs-12">
+            <div class="page-data">
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Home Preferances
+                        </h3>
+                    </div>
+                    <div id="customer-details" class="panel-collapse collapse in">
+                        <div class="panel-body basic-data">
+                            
+                            <div class="container">
+                                <p>Include in my area</p>
 
-			</div>
-		</div>
-		<div class="right col-md-3 col-xs-0"></div>
-	</div>
+                                <form id="home-preference">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="enterain">Entertainment houses</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="gym">Gym</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="health">Health Services</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="transport">Public Transport</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="schools">Schools</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="shopping">Shoping Malls</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="dataItem col-sm-12">
+                                <button id="btn-edit" class="btn btn-submit" type="button">edit Preferences</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right col-md-3 col-xs-0"></div>
+        </div>
 
     <!--Scripts-->
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
