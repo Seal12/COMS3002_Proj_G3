@@ -45,30 +45,10 @@
                         <div class="panel-body basic-data">
                             
                             <div class="container">
-                                <p>Include in my area</p>
-
-                                <form id="home-preference">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="enterain"></label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="gym">Gym</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="health">Health Services</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="transport">Public Transport</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="schools">Schools</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="shopping">Shoping Malls</label>
-                                    </div>
+                                    <p>Include in my area:</p>
                                 <!--Entertainment houses checkbox-->
                                     
-                                    <form action="#">
+                                    <form id="form-preferences" action="#">
                                         <p>
                                             <input type="checkbox" id="enterain" />
                                             <label for="enterain">Entertainment Houses</label>
@@ -77,11 +57,27 @@
                                             <input type="checkbox" id="gym" />
                                             <label for="gym">Gym</label>
                                         </p>
+                                        <p>
+                                            <input type="checkbox" id="health" />
+                                            <label for="health">Health Services</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" id="transport" />
+                                            <label for="transport">Public Transport</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" id="schools" />
+                                            <label for="schools">Schools</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" id="shopping" />
+                                            <label for="shopping">Shoping Malls</label>
+                                        </p>
                                     </form>
                                 </form>
                             </div>
                             <div class="dataItem col-sm-12">
-                                <button id="btn-edit" class="btn btn-submit" type="button">edit Preferences</button>
+                                <button id="btn-edit" class="btn btn-submit" type="button">Submit</button>
                             </div>
                         </div>
                     </div>

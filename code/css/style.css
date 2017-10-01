@@ -218,6 +218,12 @@ input[type="password"] {
 }
 
 /*Check boxes*/
+.container{
+  width: 100%;
+}
+#form-preferences{
+  margin: 10px 0;
+}
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -279,13 +285,14 @@ input[type="password"] {
 /* accessibility */
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted blue;
+  border: 2px solid blue;
 }
 
 /* hover style just for information */
 label:hover:before {
   border: 2px solid #4778d9!important;
 }
+
 
 /****************************************/
 /**************Customer******************/
@@ -384,7 +391,27 @@ label:hover:before {
   float: right;
   margin-left: 
 }
+/*Preferances Page*/
+label:hover:before {
+  border: 2px solid #801515!important;
+}
 
+/*Sell Home*/
+.metadata-list{
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.metadata-list .metadata-item{
+  overflow: auto;
+}
+.page-controls{
+  margin-bottom: 10px;
+  width: 100%;
+  overflow: auto;
+}
+.page-controls button{
+  float: right;
+}
 /****************************************/
 /***************Broker*******************/
 /****************************************/
